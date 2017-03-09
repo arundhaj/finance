@@ -1,0 +1,8 @@
+*.pyc
+*.pid
+.project
+.pydevproject
+.settings
+secret.json
+cache
+output
