@@ -1,5 +1,7 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 # Create your views here.
 def index(request):
-    return HttpResponse("Hello, world!!!")
+    context = {}
+
+    return render(request, 'finance_app/index.html', context)
