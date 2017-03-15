@@ -1,0 +1,8 @@
+* {
+  border-radius: 0 !important;
+}
+
+html, body {
+    font-family: Segoe UI;
+    background-color: #eceeef;
+}

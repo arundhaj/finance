@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="{% static 'finance_app/css/normalize.css' %}">
         <link rel="stylesheet" href="{% static 'finance_app/css/main.css' %}">
         <link rel="stylesheet" href="{% static 'finance_app/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'finance_app/css/finance.css' %}">
         <script src="{% static 'finance_app/js/vendor/modernizr-2.8.3.min.js' %}"></script>
     </head>
     <body>
@@ -22,13 +23,22 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <p>Finance Analytics</p>
+        <div id="stock_close"></div>
+        
+        
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/bootstrap.js"></script>
-        <script src="js/main.js"></script>
+        <script src="{% static 'finance_app/js/plugins.js' %}"></script>
+        <script src="{% static 'finance_app/js/bootstrap.js' %}"></script>
+        <script src="{% static 'finance_app/js/highstock.js' %}"></script>
+        <script src="{% static 'finance_app/js/finance.js' %}"></script>
+        <script type="text/javascript">
+        $(document).ready(function() {
+        	
+        	
+        });
+        </script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <!--
